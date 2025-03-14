@@ -48,10 +48,10 @@ jobs:
     - name: GIT commit and push docs
       env: 
         CI_COMMIT_MESSAGE: save spark results
-        CI_COMMIT_AUTHOR: adsoft 
+        CI_COMMIT_AUTHOR: SCIM
       run: |
         git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
-        git config --global user.email "adsoft@live.com.mx"
+        git config --global user.email "211U0378@alumno.itssat.edu.mx"
         git add results
         git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
         git push
